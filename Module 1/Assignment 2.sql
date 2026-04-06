@@ -66,3 +66,4 @@ personal_statement
 from students
 where personal_statement is not null
 order by simlarity_score desc;
+
