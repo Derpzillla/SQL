@@ -47,7 +47,7 @@ select ai_classify(
     ['Fruit', 'Meat']
 ) as classification;
 
-
+-- redacts PII with placeholder info like [name], [email]
 select ai_redact(
     'Patient John Smith, DOB 03/15/1985, SSN 123-45-6789, was seen at Fort Collins Medical Center on 04/10/2026. Contact: john.smith@email.com, phone 970-555-1234. Diagnosis: Type 2 Diabetes.'
 ) as redacted_profile;
